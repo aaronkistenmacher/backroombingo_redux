@@ -56,9 +56,14 @@
   justify-content: center;
 
   cursor: pointer;
+}
 
-  font-family: 'Archivo Black', sans-serif;
+.BingoCard-Tile h5 {
+  font-family: sans-serif;
+  font-size: 2vh;
   font-weight: lighter;
+
+  margin: 1%;
 }
 
 .BingoCard-Tile.Marked {

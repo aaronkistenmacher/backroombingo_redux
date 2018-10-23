@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BingoCard from './BingoCard';
+import Bingo from '../containers/Bingo';
 import './App.css';
 
 class App extends Component {
@@ -37,11 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="CardContainer">
-          <BingoCard
-            maxDimensions={dimensions}
-            tiles={tiles}
-            tileClickedHandler={id => console.log(id)}
-          />
+          <Bingo maxDimensions={dimensions} />
         </div>
       </div>
     );
