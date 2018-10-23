@@ -1,6 +1,7 @@
 {
   "name": "backroombingo_redux",
   "version": "0.1.0",
+  "homepage": "https://www.aaronkistenmacher.com/backroombingo",
   "private": true,
   "dependencies": {
     "ajv": "^6.5.4",
