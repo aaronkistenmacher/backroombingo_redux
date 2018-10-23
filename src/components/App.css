@@ -14,3 +14,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.ControlsContainer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Bingo from '../containers/Bingo';
+import GameControls from '../containers/GameControls';
 import './App.css';
 
 class App extends Component {
@@ -30,14 +31,13 @@ class App extends Component {
 
   render () {
     const { dimensions } = this.state;
-    const tiles = [];
-    for (let i = 0; i < 25; i += 1) {
-      tiles.push({ text: `tile ${i}`, id: `${i}` });
-    }
     return (
       <div className="App">
         <div className="CardContainer">
           <Bingo maxDimensions={dimensions} />
+        </div>
+        <div className="ControlsContainer">
+          <GameControls />
         </div>
       </div>
     );

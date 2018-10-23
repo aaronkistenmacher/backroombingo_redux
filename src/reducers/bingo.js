@@ -1,4 +1,7 @@
-import { TOGGLE_TILE } from '../ActionTypes';
+import {
+  TOGGLE_TILE,
+  RESET_CARD
+} from '../ActionTypes';
 import tileOptions from './tileOptions';
 
 const resetTiles = () => {
@@ -12,7 +15,7 @@ const resetTiles = () => {
         ? options.splice(Math.floor(Math.random() * options.length), 1)[0]
         : 'FREE',
       free: i === 12,
-      checked: i === 12
+      checked: false
     });
   }
 
@@ -29,10 +32,15 @@ const bingo = (state = defaultState, action) => {
       return {
         ...state,
         tiles: state.tiles.map(tile => (
-          (!tile.free && tile.id === action.id)
-            ? { ...tile, checked: !tile.checked }
+          (tile.id === action.id)
+            ? { ...tile, checked: tile.free || !tile.checked }
             : tile
         ))
+      };
+    case RESET_CARD:
+      return {
+        ...state,
+        tiles: resetTiles()
       };
     default:
       return state;

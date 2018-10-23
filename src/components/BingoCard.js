@@ -33,7 +33,7 @@ const BingoCard = ({ maxDimensions, tiles, tileClickedHandler }) => {
           tiles.map((tile, i) => (
             <div
               key={tile.id}
-              className={`BingoCard-Tile${tile.checked ? ' Marked' : ''}`}
+              className={`BingoCard-Tile${tile.checked ? ' Marked' : ''}${tile.free ? ' Free' : ''}`}
               role="button"
               tabIndex={i}
               onClick={() => tileClickedHandler(tile.id)}

@@ -60,10 +60,12 @@
 
 .BingoCard-Tile h5 {
   font-family: sans-serif;
-  font-size: 2vh;
+  font-size: 1.5vmin;
   font-weight: lighter;
 
   margin: 1%;
+
+  text-overflow: ellipsis;
 }
 
 .BingoCard-Tile.Marked {
@@ -73,4 +75,14 @@
   background-position: 50% 50%;
 
   color: rgba(0, 0, 0, 0.7);
+}
+
+.BingoCard-Tile.Free h5 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3vmin;
+  color: #d45033;
+}
+
+.BingoCard-Tile.Free.Marked h5 {
+  color: rgba(212, 80, 51, 0.8);
 }

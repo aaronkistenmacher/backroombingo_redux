@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'icomoon';
+
+  src: local('icomoon'),
+       url('../resources/fonts/icomoon.ttf') format('truetype');
+}
+
+.GameControls button {
+    width: 62px;
+    height: 62px;
+
+    background-color: #d45033;
+    color: #f3eae5;
+
+    border-radius: 50%;
+    border: none;
+
+    font-family: "icomoon";
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-shadow: 2px 2px 10px #888888;
+
+    outline: none;
+}
+
+.GameControls button:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 10px #888888;
+}
