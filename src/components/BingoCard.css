@@ -1,0 +1,71 @@
+.BingoCard-Container {
+  border-radius: 15px;
+  background-color: #d45033;
+  box-shadow: 2px 2px 10px #888888;
+}
+
+.BingoCard-Label {
+  height: 14%;
+  width: calc(100% - 30px);
+
+  margin: 0 15px;
+  padding: 15px 0 0 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.BingoCard-Label div {
+  width: 20%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BingoCard-Label div h1 {
+  color: #f3eae5;
+  font-size: 7vh;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: lighter;
+  text-shadow: -1vh 0 0 #262223;
+}
+
+.BingoCard-Board {
+  margin: 0 15px 15px 15px;
+  height: calc(86% - 30px);
+  width: calc(100% - 30px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.BingoCard-Tile {
+  width: 20%;
+  height: 20%;
+  background-color: #faf4ef;
+  margin: 0;
+
+  outline: 1px solid #262223;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: lighter;
+}
+
+.BingoCard-Tile.Marked {
+  background-image: url("./quality-control-stamp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  color: rgba(0, 0, 0, 0.7);
+}
